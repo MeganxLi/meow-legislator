@@ -1,4 +1,5 @@
 import { useState } from 'react'
+
 import './styles/App.scss'
 
 function App() {
@@ -7,18 +8,23 @@ function App() {
   return (
     <>
       <div>
-        <a href="https://vite.dev" target="_blank">
-        </a>
-        <a href="https://react.dev" target="_blank">
-        </a>
+        <a href="https://vite.dev" target="_blank" rel="noreferrer" />
+        <a href="https://react.dev" target="_blank" rel="noreferrer" />
       </div>
       <h1>Vite + React</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+          count is
+          {' '}
+          {count}
         </button>
         <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
+
+          Edit
+          {' '}
+          <code>src/App.tsx</code>
+          {' '}
+          and save to test HMR
         </p>
       </div>
       <p className="read-the-docs">
